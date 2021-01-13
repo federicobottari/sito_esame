@@ -1,0 +1,370 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Start */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix:after{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    font-size: 0;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header{
+    padding: 30px 40px; 
+}
+#header #site-title{
+    float:left;
+    font-weight: 700;
+    font-size: 16px;
+}
+#header #site-title a{
+    text-decoration: none;
+}
+#header #site-title,
+#header #site-title a{
+    color: #5c5c5c;
+}
+#header #main-navigation{
+    float: right;
+}
+#header #main-navigation ul{
+    padding: 0;                      /*padding agisce sul margine interno*/
+    margin: 0;
+    list-style-type: none;
+}
+#header #main-navigation ul li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+#header #main-navigation ul li:last-child{
+    margin-right: 0;
+}
+#header #main-navigation ul li a{
+    text-decoration: none;    
+}
+#header #main-navigation ul li,
+#header #main-navigation ul li a{
+    color:#afafaf;
+}
+#header #main-navigation ul li .current-page{
+    color: #5c5c5c;
+}
+/* Footer */
+#footer{
+    padding: 80px 40px 40px;
+}
+#footer #contact-area{
+    font-size: 14px;
+}
+#footer #contact-area .col{
+    width: 25%;
+    float: left;
+}
+#footer #contact-area .section-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#footer #contact-area #social-links ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#footer #contact-area #social-links ul li{
+    margin-bottom: 8px;
+}
+#footer #contact-area #social-links ul li,
+#footer #contact-area #social-links ul li a{
+    color: #c4c4c4;
+}
+#footer #contact-area #social-links ul li a{
+    text-decoration: none;
+}
+#footer #contact-area #social-links ul li a:hover{
+    color: #5c5c5c;
+}
+#footer #contact-area #newsletter input[type="email"]{
+    padding: 10px 8px;
+    display: block;
+}
+#footer #contact-area #newsletter input[type="submit"]{
+    padding: 0;
+    margin-top: 14px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c4c4c4;
+}
+#footer #contact-area #newsletter input[type="submit"]:hover{
+    color: #5c5c5c;
+    cursor: pointer;
+}
+#footer #secondary-links{
+    margin: 20px 0;
+}
+#footer #secondary-links ul{
+    padding:0;                     
+    margin:0;
+    list-style-type: none;
+}
+#footer #secondary-links ul li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    margin-right: 20px; 
+}
+#footer #secondary-links ul li:last-child{
+    margin-right: 0;
+}
+#footer #secondary-links ul li,
+#footer #secondary-links ul li a{
+    color: #afafaf;
+}
+#footer #secondary-links ul li a{
+    text-decoration: none;
+}
+
+#footer #legal-text{
+    font-size: 10px;
+    color:#afafaf;
+}
+
+/**** Home ****/
+/* Hero */
+#hero .leftside,
+#hero .rightside{
+    width: 50%;
+    float: left;
+}
+#hero .leftside{
+    padding-top: 50%;
+    content: " ";
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#hero .rightside{
+    display: flex;
+    flex-direction: column;
+}
+#hero .hero-container{
+    display: flex;
+}
+#hero .hero-container .hero-content{
+    max-width: 340px;
+    margin: auto 80px 40px;
+}
+#hero .hero-content a{
+    padding: 10px 20px;
+    background-color: #c4c4c4;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+section .section-title{
+    text-align: center;
+}
+/* Green */
+#green{
+    margin-top: 60px;
+    padding: 30px 60px 80px;
+    background-image: url('../images/green.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+#green .content{
+    max-width: 340px;
+}
+
+/* Performance */
+#performance{
+    margin-top: 60px;
+    padding: 30px 60px 80px;
+    background-image: url('../images/performance.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+#performance .content{
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+/* Manutenzione */
+#manutenzione{
+    margin-top: 60px;
+    padding: 30px 60px 80px;
+    background-image: url('../images/manutenzione.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+}
+#manutenzione .content{
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+#page-title{
+    padding: 20px 0;
+    text-align: center;
+    color: #5c5c5c;
+    text-transform: uppercase;
+}
+
+/**** Chi Siamo ****/
+#chi-siamo{
+    padding: 80px;
+    background-image: url('../images/chi-siamo.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+/**** Modello ****/
+#modello{
+    padding: 80px;
+    background-image: url('../images/modello.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+/* Tabella Specifiche */
+#modello .table-specs{
+    margin: 0 auto 40px;
+    text-transform: uppercase;
+}
+#modello .table-specs thead tr td{
+    font-weight: bold;
+    border-bottom: 1px solid #c4c4c4;
+    text-align: center;
+}
+#modello .table-specs tr td{
+    padding: 10px 20px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+/**** Contatti ****/
+#contatti{
+    padding: 80px;
+    background-image: url('../images/contatti.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+/**** Documentazione ****/
+#documentazione{
+    padding: 80px;
+}
+#documentazione ol li{
+    margin-bottom: 20px;
+}
+#documentazione ol li ol li{
+    margin-bottom: 0;
+}
+#documentazione ol li .title{
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/**** Mobile ****/
+@media (max-width: 768px){
+    #hero .hero-container{
+        display: block;
+    }
+    /* Hero */
+    #hero .leftside{
+        min-height: 300px;
+    }
+    #hero .leftside,
+    #hero .rightside{
+        width: 100%;
+        float: none;
+    }
+    #hero .hero-container .hero-content{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    /* Green */
+    #green{
+        margin-top: 0;
+        text-align: center;
+    }
+    #green .content{
+        margin: 0 auto;
+    }
+    /* Performance */
+    #performance{
+        text-align: center;
+    }
+    #performance .content{
+        margin: 0 auto;
+    }
+    /**** Header ****/
+    #header{
+        text-align: center;
+    }
+    #header #site-title{
+        float: none;
+    }
+    #header #main-navigation{
+        margin-top: 20px;
+        float: none;
+    }
+    /**** Footer ****/
+    #footer #contact-area .col{
+        width: 100%;
+        margin-bottom: 60px;
+        float: none;
+    }
+    /**** Modello ****/
+    #modello{
+        padding: 80px 20px;
+    }
+    #modello .table-specs{
+        width: 100%;
+    }
+}
+@media (max-width: 390px){
+    #header #main-navigation{
+        margin-top: 30px;
+    }
+    #header #main-navigation ul li{
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: block;
+    }
+    #header #main-navigation ul li:last-child{
+        margin-bottom: 0;
+    }
+}
